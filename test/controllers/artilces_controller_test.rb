@@ -2,47 +2,47 @@ require 'test_helper'
 
 class ArtilcesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @artilce = artilces(:one)
+    @post = posts(:one)
   end
 
   test "should get index" do
-    get artilces_url
+    get posts_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_artilce_url
+    get new_post_url
     assert_response :success
   end
 
-  test "should create artilce" do
-    assert_difference('Artilce.count') do
-      post artilces_url, params: { artilce: { text: @artilce.text, title: @artilce.title } }
+  test "should create post" do
+    assert_difference('Post.count') do
+      post posts_url, params: { post: { text: @post.text, title: @post.title } }
     end
 
-    assert_redirected_to artilce_url(Artilce.last)
+    assert_redirected_to post_url(Post.last)
   end
 
-  test "should show artilce" do
-    get artilce_url(@artilce)
+  test "should show post" do
+    get post_url(@post)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_artilce_url(@artilce)
+    get edit_post_url(@post)
     assert_response :success
   end
 
-  test "should update artilce" do
-    patch artilce_url(@artilce), params: { artilce: { text: @artilce.text, title: @artilce.title } }
-    assert_redirected_to artilce_url(@artilce)
+  test "should update post" do
+    patch post_url(@post), params: { post: { text: @post.text, title: @post.title } }
+    assert_redirected_to post_url(@post)
   end
 
-  test "should destroy artilce" do
-    assert_difference('Artilce.count', -1) do
-      delete artilce_url(@artilce)
+  test "should destroy post" do
+    assert_difference('Post.count', -1) do
+      delete post_url(@post)
     end
 
-    assert_redirected_to artilces_url
+    assert_redirected_to posts_url
   end
 end

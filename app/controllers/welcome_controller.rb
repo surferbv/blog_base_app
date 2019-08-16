@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   
   def index    
-    @artilces = Artilce.all
+    @posts = Post.all
 
     respond_to do |format|
       format.html
