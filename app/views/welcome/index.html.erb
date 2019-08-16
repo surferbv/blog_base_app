@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Home Page</h1>
+<h2>It has been written</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="1"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @artilces.each do |artilce| %>
+        <tr>
+            <td><%= artilce.text %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
