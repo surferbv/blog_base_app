@@ -6,8 +6,13 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+    - ruby '2.5.0'
+    - rails 5.2.3
 
 * System dependencies
+    - bootstrap
+    - jquery-rails
+    - simple_form
 
 * Configuration
 
@@ -19,8 +24,13 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
+* Purpose 
+    - NOTE: This is a base project used to test new features or gems in isolation.
+    
 * Deployment instructions
-    - This is a base project used to test new features or gems in isolation.
 
+    1. Clone from github
+    2. rails db:migrate
+    3. rails s
 * ...
 
