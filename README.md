@@ -24,6 +24,9 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
+* Generation
+    - rails g scaffold Posts title:string content:text
+
 * Purpose 
     - NOTE: This is a base project used to test new features or gems in isolation.
     

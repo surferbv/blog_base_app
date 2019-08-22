@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Home Page</h1>
-<h2>It has been written</h2>
+<h2>It has been written...</h2>
 
 <table>
     <thead>
@@ -14,7 +14,7 @@
     <tbody>
         <% @posts.each do |post| %>
         <tr>
-            <td><%= post.text %></td>
+            <td><%= post.content %></td>
         </tr>
         <% end %>
     </tbody>
